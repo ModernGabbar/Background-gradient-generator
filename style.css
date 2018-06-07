@@ -5,21 +5,27 @@ body {
     text-transform: uppercase;
     letter-spacing: .5em;
     top: 15%;
-	background: linear-gradient(to right, rgb(222, 41, 210) , rgb(26, 25, 177)); /* Standard syntax */
+    background: linear-gradient(to right, rgb(222, 41, 210) , rgb(26, 25, 177));
 }
 
 h1 {
-    font: 600 3.5em 'Raleway', sans-serif;
+    font: 600 3.4em 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
     text-transform: uppercase;
     letter-spacing: .5em;
-    width: 100%;
     transition: all 500ms;
 }
 
 h1:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
+}
+
+.conatiner {
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -32,11 +38,17 @@ h3 {
 
 .color {
     margin: 0;
-    height: 50px;
-    width: 50px;
+    height: 4em;
+    width: 4em;
+    outline: none;
+    background: #fff;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px;
     transition: all 100ms;
 }
 
 .color:hover {
+    cursor: pointer;
     transform: scale(1.05);
 }
